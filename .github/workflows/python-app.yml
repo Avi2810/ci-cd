@@ -42,7 +42,7 @@ jobs:
     
     runs-on: ununtu-latest
     needs: build
-    if: github.ref == 'refs/head/main'
+    # if: github.ref == 'refs/head/main'
 
     steps:
      
@@ -52,5 +52,5 @@ jobs:
      - name: Deploy Code
        run: |
         echo "Starting Deployment..."
-        
+
 
